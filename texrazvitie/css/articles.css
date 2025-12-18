@@ -1,0 +1,134 @@
+/* Articles Section */
+.articles {
+    padding: 190px 0;
+    background: #020818;
+    position: relative;
+    overflow: hidden;
+}
+
+.articles::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -300px;
+    width: 2550px;
+    height: 1351px;
+    background-image: url('/img/background-articles.png');
+    background-size: cover;
+    opacity: 0.15;
+}
+
+.articles .container {
+    position: relative;
+    z-index: 1;
+}
+
+.articles__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 64px;
+}
+
+.articles__text {
+    max-width: 700px;
+}
+
+.section-title-white {
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: -1.68px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section-subtitle-white {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+    color: white;
+    opacity: 0.64;
+}
+
+.articles__controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 120px;
+}
+
+.articles__btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.articles__btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.articles__list {
+    display: flex;
+    gap: 25px;
+}
+
+.articles__card {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articles__image {
+    width: 100%;
+    height: 440px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.articles__image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.articles__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.articles__content {
+    position: relative;
+}
+
+.articles__title {
+    font-size: 24px;
+    line-height: 1.39;
+    letter-spacing: -0.48px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.articles__author {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.14px;
+    color: white;
+    opacity: 0.4;
+    margin-bottom: 110px;
+}
